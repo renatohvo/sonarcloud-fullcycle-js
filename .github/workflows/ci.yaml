@@ -14,7 +14,7 @@ jobs:
           node-version: 20
 
       - name: Install
-        run: npm ci
+        run: npm i
 
       - name: Tests
         run: npm test
