@@ -24,9 +24,10 @@ jobs:
       - name: Tests
         run: npm test
 
-      - name: Coverage
+      - name: Codecov
         uses: codecov/codecov-action@v3
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/lcov.info
 
       - name: SonarQube Scan
